@@ -1,0 +1,18 @@
+server:
+   port: 9090
+application:
+   name: ^project.artifactId^
+   description: ^project.name^
+   version: ^project.version^
+spring:
+  application:
+    name: ^project.artifactId^
+    h2:
+      console:
+        enabled: true
+    jpa:
+      hibernate.ddl-auto: create-drop
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
